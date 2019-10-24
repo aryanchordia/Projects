@@ -1,0 +1,41 @@
+Project Proposal:
+
+Project Description: 
+
+- My project will be called StickCricket and it we be very similar to the actual StickCricket gaming app on android/ios platforms. The player view will be directly behind the batsmen and based on the speed and swing of the ball, the player must choose to swing left or right and based on his timing of the swing he will be given runs(score). There will also be fielders who are able to catch the ball directly and get the players wicket or even throw it back to the bowler or wicketkepper. The bastmen will also be able to run between wickets and rotate the strike. There will be a default score at the start of the game that the bowling team has put up and the batting team will have to beat that score within the respective overs.
+
+Competitive Analysis:
+
+- The most similar projects I've seen is the actual game of StickCricket. It will be similar to this game in the way that the batsmen is able to swing left/right. However, in the actual game they are not able to run between the wickets, hence this will be one major difference. As well as this in the actual game all the fielders can do is catch the ball in the air for the wicket, they are unable to throw it back to either end of the pitch (mainly due to the fact that the batsmen are not able to run,) and hence in my version the fielders will able to throw it back to the pitch based on which runner is actually further away from his wicket. 
+
+Moreover, in my project you will be able to create your own team and player names whereas in the actual game all you can do is choose which team you want to be in and make your own character only. You are not able to create your own team. However, one major way the actual game is more complex than mine is inb the way it creates a league. For example, you play a season against the toher teams in the league and at the end based on cumalitive points a winner is chosen, as well as this, at the end of every season you are able to purchase new players based on the money you earned the entire season. I would hope to incorporate this in my TP, however, it will be a later priority as I will need to do many other things first relating to the game itself. 
+
+Structural Plan: 
+
+- Final project will all be under Term Project Folder. Within that folder there will be the main file, which will contain all the code. There will also be an images file, which will contain all the respective sprites as well as the background images.
+
+Algorithmic Plan: 
+
+- The trickiest part of my project will probaby be to determine the collision between the bat and the ball and how the ball should respond to this. It's extremely difficiult as there are an infinite range of possibilities with a collision and it will involve a lot of physics. My plan to tackle this is to first seperate different types of collisions into specific groups. Following this in a certain group there will be a veriety of motions the ball can take on based on how the player timed the shot as well as well as where on the bat the ball strikes. Based on these criteria ther will be a certain motion of the ball in the air/ground that I will code. The way I will code this is based on a mix of using random and set values. The random values will be the x and y axis motion of the ball for that specific hit (hence will be pretty constrained - range of 5-10 pixels in either axis) and the set element will be the speed of the ball as this is an exact science based on how well you hit the ball (how well you hit the ball- will be determined with your timing of when you choose to swing the bat.)
+
+Another tricky part of the project will be how the fielders intercept the ball (if they are able to) and how they choose which end of the pitch to throw it back to. I will tackle this by having a sort of collision/hit box around the fielder (slightly bigger than their sprite dimensions) and have them move towards the ball if it enters their collison box. Once the ball hits the sprite the fielder must then 'throw' the ball back towards either end of the pitch. This will be decided based on how far each player is from the wickets on their respective ends. The player that is furthest will be where the fielder throws it back to as this will increase the chances of a stumping making the game much more realistic. The speed of the throw will be constant and will not vary, allowing players to judge when they choose to run or when to stay at the wickets.
+
+Timeline Plan:
+
+- By the TP2 deadline I will have completed:
+	. Players being able to run(by the 22nd of Nov)
+	. Fielders able to intercept ball (by 23rd)
+	. Players being able to swing the bat (by 25th)
+	. Fielders being able to throw the ball back (by 26th)
+	. Able to choose your player and Team and actually play the game(by 28th Nov)
+
+Version Control:
+
+-  I will back up my code using Google Drive, inside the folder my TP mentor (Eileen) created. After every edit of the code I will upload the new file, along with the folder for all the sprites.
+
+Module List:
+
+- Pygame
+
+
+
